@@ -57,7 +57,7 @@ branches:
 deploy:
   provider: releases
   api_key:
-    secure: a7b865523aa4d0a84ee2d8207c5a5e903d2afd6b
+    secure: 9cf44d0eba3b60f4eb0d8ce8ff872626ad7713e7
   file: "release/*"
   skip_cleanup: true
   on:
