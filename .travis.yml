@@ -53,3 +53,12 @@ before_cache:
 branches:
   except:
     - "/^v\\d+\\.\\d+\\.\\d+$/"
+
+deploy:
+  provider: releases
+  api_key:
+    secure: a7b865523aa4d0a84ee2d8207c5a5e903d2afd6b
+  file: "release/*"
+  skip_cleanup: true
+  on:
+    tags: true
