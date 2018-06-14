@@ -57,7 +57,7 @@ branches:
 deploy:
   provider: releases
   api_key:
-    secure: "28b6ee936cd791d7e0bfaf213e31f437d76e363c"
+    secure: $GITHUB_TOKEN
   file: "release/*"
   skip_cleanup: true
   on:
