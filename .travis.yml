@@ -1,3 +1,5 @@
+sudo: true
+dist: trusty
 matrix:
   include:
     - os: osx
