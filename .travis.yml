@@ -44,7 +44,7 @@ script:
         # /bin/bash -c "yarn --link-duplicates --pure-lockfile && yarn release --linux --win"
     else
       #yarn release
-      npm run package
+      #npm run package
     fi
 
 before_cache:
@@ -61,4 +61,4 @@ deploy:
   file: "*"
   skip_cleanup: true
   on:
-    tags: false
+    tags: true
