@@ -41,10 +41,12 @@ script:
         -v ~/.cache/electron-builder:/root/.cache/electron-builder \
         electronuserland/builder:wine \
         npm run package -all
+        ls -la
         # /bin/bash -c "yarn --link-duplicates --pure-lockfile && yarn release --linux --win"
     else
       #yarn release
-      #npm run package
+      ls -la
+      npm run package
     fi
 
 before_cache:
